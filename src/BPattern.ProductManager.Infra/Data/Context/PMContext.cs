@@ -6,9 +6,9 @@ using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace BPattern.ProductManager.Infra.Data.Context
 {
-    public class AppContext : DbContext
+    public class PMContext : DbContext
     {
-        public AppContext() : base("DefaultConnection")
+        public PMContext() : base("DefaultConnection")
         {
             Configuration.ProxyCreationEnabled = false;
             Configuration.LazyLoadingEnabled = false;

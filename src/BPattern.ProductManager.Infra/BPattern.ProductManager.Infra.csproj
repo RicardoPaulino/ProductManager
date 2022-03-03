@@ -51,15 +51,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\Context\AppContext.cs" />
+    <Compile Include="Data\Context\PMContext.cs" />
     <Compile Include="Data\Mappings\EnderecoConfig.cs" />
     <Compile Include="Data\Mappings\FornecedorConfig.cs" />
     <Compile Include="Data\Mappings\ProdutoConfig.cs" />
-    <Compile Include="Migrations\202203030006486_enderec.cs" />
-    <Compile Include="Migrations\202203030006486_enderec.designer.cs">
+    <Compile Include="Data\Migrations\202203030006486_enderec.cs" />
+    <Compile Include="Data\Migrations\202203030006486_enderec.designer.cs">
       <DependentUpon>202203030006486_enderec.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Data\Migrations\Configuration.cs" />
+    <Compile Include="Data\Repository\Repository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -73,10 +74,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202203030006486_enderec.resx">
+    <EmbeddedResource Include="Data\Migrations\202203030006486_enderec.resx">
       <DependentUpon>202203030006486_enderec.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
